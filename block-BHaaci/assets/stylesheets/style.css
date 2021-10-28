@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 
+List of resets
+1. Border-box
+2. anchor tag delinking
+3. body font style
+4. container style
+5. flex class
+6. Other flex (depending on the page layout)
+*/
+
+/* Personal Resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* General styling cues */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;   /* Used for horizontal alignment */
+    align-items: center; /* Used for vertical alignment */
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+/* Specific styling begins */
+main {
+    height: 100vh;
+    background: url(../media/bg-intro-desktop.png) no-repeat, linear-gradient(#EE817D, #EE817D);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+/* Buttons (not that song by the Pussycat dolls) */
+.btn {
+    color: white;
+    font-size: 16px;
+    padding: 18px;
+    width: 100%;
+}
+.btn-primary {
+    background-color: #5C559E;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 32px;
+    box-shadow: 0 6px 0 0 rgba(0,0,0,0.2);
+}
+.btn-primary strong {
+    font-weight: 900;
+}
+.btn-secondary {
+    background-color: #68C98F;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    border-bottom: 4px solid rgba(0,0,0,0.1);
+}
+
+/* Banner on the left-side */
+.left-banner .text {
+    width: 95%;
+}
+.heading {
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+.text {
+    color: white;
+    font-size: 19px;
+}
+form {
+    background-color: white;
+    padding: 32px;
+    border-radius: 10px;
+}
+.form-control {
+    display: inline-block;
+    width: 100%;
+    padding: 17px 16px;
+    margin-bottom: 20px;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+/* Form on the right */
+.terms {
+    text-align: center;
+    font-size: 12px;
+    color: #918f99;
+}
+.terms strong {
+    color: #E28685;
+    font-weight: 600;
+    margin-left: 2px;
+}
